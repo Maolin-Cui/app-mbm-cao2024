@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Brainlife group-level App skeleton for the UNMODIFIED Cao 2024 MBM toolbox.
+# All input dataset paths are supplied through config.json.
+python3 prepare_inputs.py --config config.json
+
+if ! command -v matlab >/dev/null 2>&1; then
+  echo 'MATLAB is not available on this compute resource. The official Cao 2024 MBM toolbox requires MATLAB R2022a-R2024a (per authors README).' >&2
+  exit 31
+fi
+if [ ! -f vendor/MBM/mbm_main.m ]; then
+  echo 'Missing official NSBLab/MBM toolbox: run ./install_official_mbm.sh BEFORE publishing this repository; commit vendor/MBM with license.' >&2
+  exit 32
+fi
+matlab -batch "run('run_official_mbm.m')"

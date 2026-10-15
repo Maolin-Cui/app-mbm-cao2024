@@ -1,0 +1,6 @@
+config.json
+prepared/
+result/
+group_bundle/
+__pycache__/
+*.pyc

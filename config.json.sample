@@ -1,0 +1,10 @@
+{
+  "group_bundle": "./group_bundle",
+  "case_label": "MSA",
+  "control_label": "HC",
+  "num_modes": 150,
+  "n_permutations": 5000,
+  "p_threshold": 0.05,
+  "gpd_p_threshold": 0.1,
+  "fdr": true
+}

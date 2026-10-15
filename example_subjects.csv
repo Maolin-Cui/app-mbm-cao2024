@@ -1,0 +1,3 @@
+subject_id,group,age,sex,lh_map,rh_map
+sub-001,MSA,61,F,maps/sub-001.L.thickness.32k_fsLR.func.gii,maps/sub-001.R.thickness.32k_fsLR.func.gii
+sub-002,HC,59,M,maps/sub-002.L.thickness.32k_fsLR.func.gii,maps/sub-002.R.thickness.32k_fsLR.func.gii
